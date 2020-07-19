@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /*
 Task Description:
 Complete find the first duplicate character in a string.
@@ -12,7 +15,7 @@ Example2: input: abcd, return: -1
 
  */
 public class FindDuplicate{
-    public int getDuplicateNumber(String input){
+    public static int getDuplicateNumber(String input){
         Set<Character> tempSet = new HashSet<>();
         for(int i =0; i< input.length();i++)
         {
@@ -22,7 +25,7 @@ public class FindDuplicate{
                 tempSet.add(input.charAt(i));
             }
         }
-        return -1
+        return -1;
     }
 
 }
